@@ -4,7 +4,7 @@
     <sca:interface.wsdl xmi:id="_dZHlJrejEeuEDd4UQo8NRQ" interface="http://www.example.org/wsdl/1621319811853#wsdl.interface(SAP_HERO_ONL_0001)"/>
     <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_fzmDgLejEeuEDd4UQo8NRQ" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/1173360d11e0413bb6d088248079b06f/SOAPServiceBinding" portTypeQName="wsdl_1621319811853:SAP_HERO_ONL_0001" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/EAI_SoapTypeSAP/Service%20Descriptors/SAP_HERO_ONL_0001.wsdl">
       <bindingType xmi:id="_JWkK4LelEeuEDd4UQo8NRQ"/>
-      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_kOF44LejEeuEDd4UQo8NRQ" endpointURI="/SAP_HERO_ONL_0001/" httpConnector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_kOF44LejEeuEDd4UQo8NRQ" endpointURI="/sap/BcoSaleitems" httpConnector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource"/>
       <operationConfiguration xmi:id="_JWkK4belEeuEDd4UQo8NRQ" description="" operationName="operation" action="operation" actionNeeded="true">
         <bindingType xmi:id="_JWkK4relEeuEDd4UQo8NRQ"/>
         <messageConfiguration xmi:id="_JWkK47elEeuEDd4UQo8NRQ" messageQName="wsdl_1621319811853:operationRequest" wsdlLocation="platform:/resource/EAI_SoapTypeSAP/Service%20Descriptors/SAP_HERO_ONL_0001.wsdl">
