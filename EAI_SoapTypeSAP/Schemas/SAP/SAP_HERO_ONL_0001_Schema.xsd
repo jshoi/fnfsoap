@@ -94,9 +94,11 @@
 							</element>
 							<element name="SELLPRICE" nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
-							<element name="KWMENG" nillable="true" minOccurs="0" maxOccurs="1">
+							<element name="KWMENG" nillable="true"
+								minOccurs="0" maxOccurs="1">
+
 								<simpleType>
-									<restriction base="decimal">
+									<restriction base="integer">
 										<maxExclusive value="8"></maxExclusive>
 									</restriction>
 								</simpleType>
