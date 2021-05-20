@@ -18,15 +18,6 @@
           <outputMapping xmi:id="_JWkK6belEeuEDd4UQo8NRQ" direction="OUTPUT"/>
         </context>
       </operationConfiguration>
-      <operationConfiguration xmi:id="_5wmBoLkPEeuEDd4UQo8NRQ" operationName="operation1" action="operation1" actionNeeded="true">
-        <bindingType xmi:id="_5wmBobkPEeuEDd4UQo8NRQ"/>
-        <messageConfiguration xmi:id="_5wmBorkPEeuEDd4UQo8NRQ" messageQName="wsdl_1621319811853:operation1Request" wsdlLocation="platform:/resource/EAI_SoapTypeSAP/Service%20Descriptors/SAP_HERO_ONL_0001.wsdl">
-          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_5wmBo7kPEeuEDd4UQo8NRQ" partName="parameters" partElementName="schema_1621317293339:operation1Request"/>
-        </messageConfiguration>
-        <context xmi:id="_5wmBpLkPEeuEDd4UQo8NRQ">
-          <inputMapping xmi:id="_5wmosLkPEeuEDd4UQo8NRQ"/>
-        </context>
-      </operationConfiguration>
     </scaext:binding>
   </sca:service>
   <sca:property xmi:id="_U5OXwLePEeuwy9ua3obqNw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>

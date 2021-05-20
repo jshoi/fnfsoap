@@ -22,19 +22,11 @@
   <wsdl:message name="operationRequest">
     <wsdl:part element="extns:operationRequest" name="parameters"/>
   </wsdl:message>
-  <wsdl:message name="operationResponse">
-    <wsdl:part element="extns:operationResponse" name="parameters"/>
-  </wsdl:message>
-    <wsdl:message name="operation1Request">
-    <wsdl:part element="extns:operation1Request" name="parameters"/>
+  <wsdl:message name="operationResponse">
   </wsdl:message>
     <wsdl:portType name="SAP_HERO_ONL_0001">
     <wsdl:operation name="operation">
-      <wsdl:input message="tns:operationRequest" name="operationInput"/>
-      <wsdl:output message="tns:operationResponse" name="operationOutput"/>
-    </wsdl:operation>
-        <wsdl:operation name="operation1">
-      <wsdl:input message="tns:operation1Request" name="operation1Input"/>
+      <wsdl:input message="tns:operationRequest" name="operationInput"/>
     </wsdl:operation>
     </wsdl:portType>
 </wsdl:definitions>
