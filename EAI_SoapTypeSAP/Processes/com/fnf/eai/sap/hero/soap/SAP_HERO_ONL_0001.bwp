@@ -229,7 +229,7 @@
                                     <element maxOccurs="1" minOccurs="1"
                                     name="pos_no" nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
-                                    name="sale_seq" nillable="true" type="decimal"/>
+                                    name="sale_seq" nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
                                     name="online_yn" nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
@@ -244,7 +244,7 @@
                                     <element maxOccurs="1" minOccurs="1"
                                     name="head_act" nillable="true" type="decimal"/>
                                     <element maxOccurs="1" minOccurs="1"
-                                    name="head_cnt" nillable="true" type="decimal"/>
+                                    name="head_cnt" nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
                                     name="alipay_yn" nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
@@ -528,6 +528,22 @@
                 <element href="//0/@process"/>
             </children>
             <children type="3002">
+                <children
+                    description="비동기 인터페이스 이며, 스키마 검증(size 등)으로 인하여 operationin에서 에러발생시, START/ERROR 로그가 적재안되는 CASE이므로 표준화와 달리 개발함"
+                    fillColor="13369343" fontName="맑은 고딕"
+                    lineColor="6737151" lineWidth="1" transparency="0"
+                    type="Note" xsi:type="notation:Shape">
+                    <children type="DiagramName" xsi:type="notation:BasicDecorationNode">
+                        <element xsi:nil="true"/>
+                    </children>
+                    <children type="Description" xsi:type="notation:BasicDecorationNode">
+                        <element xsi:nil="true"/>
+                    </children>
+                    <styles xsi:type="notation:TextStyle"/>
+                    <styles xsi:type="notation:LineTypeStyle"/>
+                    <element xsi:nil="true"/>
+                    <layoutConstraint x="554" xsi:type="notation:Bounds" y="-100"/>
+                </children>
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
             </children>
@@ -603,7 +619,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="264"
+                                    x="239"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
                                     <children type="4002 bw.generalactivities.bwassign">
@@ -669,7 +685,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="488"
+                                    x="514"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
                                     <children type="4002 bw.generalactivities.callprocess">
@@ -702,7 +718,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.4"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="592"
+                                    x="627"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
                                     <children type="4002 bw.jdbc.update">
@@ -735,8 +751,72 @@
                                     <element href="//0/@process/@activity/@activity/@activities.5"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="373"
+                                    x="399"
                                     xsi:type="notation:Bounds" y="20"/>
+                                    </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.6"/>
+                                    <layoutConstraint x="239"
+                                    xsi:type="notation:Bounds" y="145"/>
+                                    </children>
+                                    <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.7"/>
+                                    <layoutConstraint
+                                    height="40" width="40"
+                                    x="147"
+                                    xsi:type="notation:Bounds" y="121"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -750,8 +830,8 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="407"
-                                    width="1184" xsi:type="notation:Bounds"/>
+                                    <layoutConstraint height="305"
+                                    width="764" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -760,7 +840,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="372" width="1187" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="305" width="767" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -904,7 +984,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="608" width="1187" x="1"
+                    <layoutConstraint height="506" width="767" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -913,7 +993,7 @@
             </children>
             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="660" width="1109" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="558" width="1109" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -943,7 +1023,7 @@
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
             <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
+                <layoutConstraint x="-5" xsi:type="notation:Location" y="-17"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
@@ -982,6 +1062,39 @@
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="255" xsi:type="notation:ConnectorStyle"/>
+            <styles fontColor="255" fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <bendpoints points="[-1, -24, 0, 82]$[0, -81, 1, 25]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
+            <children type="6002">
+                <layoutConstraint x="1" xsi:type="notation:Location" y="-1"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <bendpoints points="[-3, 25, 8, -76]$[-8, 77, 3, -24]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1049,6 +1162,9 @@
         <bpws:variable element="ns8:DefaultFault" name="Throw-input" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns2:operationRequest"
             name="operationIn" sca-bpel:internal="true"/>
+        <bpws:variable element="ns8:DefaultFault" name="Throw1-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns:OptionalErrorReport"
+            name="_errorOptional" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1069,7 +1185,7 @@
                         </bpws:links>
                         <bpws:extensionActivity>
                             <tibex:extActivity
-                                expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JobInfo&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;loglevel&quot;/>&lt;xsl:param name=&quot;operationIn&quot;/>&lt;xsl:param name=&quot;_error&quot;/>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:template name=&quot;LOG_ERROR-input&quot; match=&quot;/&quot;>&lt;tns7:JobTotal>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($JobInfo)&quot;>&lt;xsl:copy-of select=&quot;$JobInfo&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;tns7:JobInfo>&lt;xsl:variable name=&quot;IF_ID&quot; select=&quot;substring(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), tib:last-index-of(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), '.')+1)&quot;/>&lt;xsl:variable name=&quot;CURR_TM&quot; select=&quot;format-dateTime(current-dateTime(), '[Y0001][M01][D01][H01][m01][s01][f001]')&quot;/>&lt;IF_ID>&lt;xsl:value-of select=&quot;substring(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), tib:last-index-of(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), '.')+1)&quot;/>&lt;/IF_ID>&lt;TR_ID>&lt;xsl:value-of select=&quot;concat($IF_ID, '', $CURR_TM, '', $_processContext/JobId)&quot;/>&lt;/TR_ID>&lt;/tns7:JobInfo>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;tns7:TxInfo>&lt;PROC_TM>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/PROC_TM>&lt;PROC_CNT>&lt;xsl:value-of select=&quot;1&quot;/>&lt;/PROC_CNT>&lt;STEP>&lt;xsl:value-of select=&quot;'ERROR'&quot;/>&lt;/STEP>&lt;ERROR_MSG>&lt;xsl:value-of select=&quot;substring-after($_error/StackTrace, &amp;quot;Caused&amp;quot;)&quot;/>&lt;/ERROR_MSG>&lt;ERROR_STACKTRACE>&lt;xsl:value-of select=&quot;$FaultDetails/StackTrace&quot;/>&lt;/ERROR_STACKTRACE>&lt;DEBUG>&lt;xsl:value-of select=&quot;$loglevel&quot;/>&lt;/DEBUG>&lt;DEBUG_DATA>&lt;xsl:value-of select=&quot;$operationIn/parameters/tns1:operationRequest&quot;/>&lt;/DEBUG_DATA>&lt;ERROR_ACTIVITY>&lt;xsl:value-of select=&quot;$FaultDetails/ActivityName&quot;/>&lt;/ERROR_ACTIVITY>&lt;ERROR_CODE>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/ERROR_CODE>&lt;DATA_CNT>&lt;xsl:value-of select=&quot;xsd:int(count($operationIn/parameters/tns1:operationRequest/REQUEST))&quot;/>&lt;/DATA_CNT>&lt;/tns7:TxInfo>&lt;/tns7:JobTotal>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;loglevel&quot;/>&lt;xsl:param name=&quot;operationIn&quot;/>&lt;xsl:param name=&quot;_error&quot;/>&lt;xsl:param name=&quot;JobInfo&quot;/>&lt;xsl:param name=&quot;_error_JDBCUpdate&quot;/>&lt;xsl:template name=&quot;LOG_ERROR-input&quot; match=&quot;/&quot;>&lt;tns7:JobTotal>&lt;xsl:copy-of select=&quot;$JobInfo&quot;/>&lt;tns7:TxInfo>&lt;PROC_TM>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/PROC_TM>&lt;PROC_CNT>&lt;xsl:value-of select=&quot;1&quot;/>&lt;/PROC_CNT>&lt;STEP>&lt;xsl:value-of select=&quot;'ERROR'&quot;/>&lt;/STEP>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($_error_JDBCUpdate)&quot;>&lt;ERROR_MSG>&lt;xsl:value-of select=&quot;substring-after($_error/StackTrace, &amp;quot;Caused&amp;quot;)&quot;/>&lt;/ERROR_MSG>&lt;/xsl:when>&lt;xsl:otherwise>&lt;ERROR_MSG>&lt;xsl:value-of select=&quot;$_error/Msg&quot;/>&lt;/ERROR_MSG>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;ERROR_STACKTRACE>&lt;xsl:value-of select=&quot;$FaultDetails/StackTrace&quot;/>&lt;/ERROR_STACKTRACE>&lt;DEBUG>&lt;xsl:value-of select=&quot;$loglevel&quot;/>&lt;/DEBUG>&lt;DEBUG_DATA>&lt;xsl:value-of select=&quot;tib:render-xml($operationIn/parameters/tns1:operationRequest)&quot;/>&lt;/DEBUG_DATA>&lt;ERROR_ACTIVITY>&lt;xsl:value-of select=&quot;$FaultDetails/ActivityName&quot;/>&lt;/ERROR_ACTIVITY>&lt;ERROR_CODE>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/ERROR_CODE>&lt;DATA_CNT>&lt;xsl:value-of select=&quot;xsd:int(count($operationIn/parameters/tns1:operationRequest/REQUEST))&quot;/>&lt;/DATA_CNT>&lt;/tns7:TxInfo>&lt;/tns7:JobTotal>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                 expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                 inputVariable="LOG_ERROR-input"
                                 name="LOG_ERROR"
@@ -1080,7 +1196,7 @@
                                 </bpws:sources>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;operationIn.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;JobInfo&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:param name=&quot;loglevel&quot;/>&#xa;    &lt;xsl:param name=&quot;_error&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:template name=&quot;LOG_ERROR-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns7:JobTotal>&#xa;            &lt;xsl:choose>&#xa;                &lt;xsl:when test=&quot;exists($JobInfo)&quot;>&#xa;                    &lt;xsl:copy-of select=&quot;$JobInfo&quot;/>&#xa;                &lt;/xsl:when>&#xa;                &lt;xsl:otherwise>&#xa;                    &lt;tns7:JobInfo>&#xa;                        &lt;xsl:variable name=&quot;IF_ID&quot; select=&quot;substring(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), tib:last-index-of(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), '.')+1)&quot;/>&#xa;                        &lt;xsl:variable name=&quot;CURR_TM&quot; select=&quot;format-dateTime(current-dateTime(), '[Y0001][M01][D01][H01][m01][s01][f001]')&quot;/>&#xa;                        &lt;IF_ID>&#xa;                            &lt;xsl:value-of select=&quot;substring(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), tib:last-index-of(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), '.')+1)&quot;/>&#xa;                        &lt;/IF_ID>&#xa;                        &lt;TR_ID>&#xa;                            &lt;xsl:value-of select=&quot;concat($IF_ID, '', $CURR_TM, '', $_processContext/JobId)&quot;/>&#xa;                        &lt;/TR_ID>&#xa;                    &lt;/tns7:JobInfo>&#xa;                &lt;/xsl:otherwise>&#xa;            &lt;/xsl:choose>&#xa;            &lt;tns7:TxInfo>&#xa;                &lt;PROC_TM>&#xa;                    &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;                &lt;/PROC_TM>&#xa;                &lt;PROC_CNT>&#xa;                    &lt;xsl:value-of select=&quot;1&quot;/>&#xa;                &lt;/PROC_CNT>&#xa;                &lt;STEP>&#xa;                    &lt;xsl:value-of select=&quot;'ERROR'&quot;/>&#xa;                &lt;/STEP>&#xa;                &lt;ERROR_MSG>&#xa;                    &lt;xsl:value-of select=&quot;substring-after($_error/StackTrace, &amp;quot;Caused&amp;quot;)&quot;/>&#xa;                &lt;/ERROR_MSG>&#xa;                &lt;ERROR_STACKTRACE>&#xa;                    &lt;xsl:value-of select=&quot;$FaultDetails/StackTrace&quot;/>&#xa;                &lt;/ERROR_STACKTRACE>&#xa;                &lt;DEBUG>&#xa;                    &lt;xsl:value-of select=&quot;$loglevel&quot;/>&#xa;                &lt;/DEBUG>&#xa;                &lt;DEBUG_DATA>&#xa;                    &lt;xsl:value-of select=&quot;$operationIn.parameters&quot;/>&#xa;                &lt;/DEBUG_DATA>&#xa;                &lt;ERROR_ACTIVITY>&#xa;                    &lt;xsl:value-of select=&quot;$FaultDetails/ActivityName&quot;/>&#xa;                &lt;/ERROR_ACTIVITY>&#xa;                &lt;ERROR_CODE>&#xa;                    &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;                &lt;/ERROR_CODE>&#xa;                &lt;DATA_CNT>&#xa;                    &lt;xsl:value-of select=&quot;xsd:int(count($operationIn.parameters/REQUEST))&quot;/>&#xa;                &lt;/DATA_CNT>&#xa;            &lt;/tns7:TxInfo>&#xa;        &lt;/tns7:JobTotal>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;operationIn.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:param name=&quot;loglevel&quot;/>&#xa;    &lt;xsl:param name=&quot;_error&quot;/>&#xa;    &lt;xsl:param name=&quot;JobInfo&quot;/>&#xa;    &lt;xsl:param name=&quot;_error_JDBCUpdate&quot;/>&#xa;    &lt;xsl:template name=&quot;LOG_ERROR-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns7:JobTotal>&#xa;            &lt;xsl:copy-of select=&quot;$JobInfo&quot;/>&#xa;            &lt;tns7:TxInfo>&#xa;                &lt;PROC_TM>&#xa;                    &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;                &lt;/PROC_TM>&#xa;                &lt;PROC_CNT>&#xa;                    &lt;xsl:value-of select=&quot;1&quot;/>&#xa;                &lt;/PROC_CNT>&#xa;                &lt;STEP>&#xa;                    &lt;xsl:value-of select=&quot;'ERROR'&quot;/>&#xa;                &lt;/STEP>&#xa;                &lt;xsl:choose>&#xa;                    &lt;xsl:when test=&quot;exists($_error_JDBCUpdate)&quot;>&#xa;                        &lt;ERROR_MSG>&#xa;                            &lt;xsl:value-of select=&quot;substring-after($_error/StackTrace, &amp;quot;Caused&amp;quot;)&quot;/>&#xa;                        &lt;/ERROR_MSG>&#xa;                    &lt;/xsl:when>&#xa;                    &lt;xsl:otherwise>&#xa;                        &lt;ERROR_MSG>&#xa;                            &lt;xsl:value-of select=&quot;$_error/Msg&quot;/>&#xa;                        &lt;/ERROR_MSG>&#xa;                    &lt;/xsl:otherwise>&#xa;                &lt;/xsl:choose>&#xa;                &lt;ERROR_STACKTRACE>&#xa;                    &lt;xsl:value-of select=&quot;$FaultDetails/StackTrace&quot;/>&#xa;                &lt;/ERROR_STACKTRACE>&#xa;                &lt;DEBUG>&#xa;                    &lt;xsl:value-of select=&quot;$loglevel&quot;/>&#xa;                &lt;/DEBUG>&#xa;                &lt;DEBUG_DATA>&#xa;                    &lt;xsl:value-of select=&quot;tib:render-xml($operationIn.parameters)&quot;/>&#xa;                &lt;/DEBUG_DATA>&#xa;                &lt;ERROR_ACTIVITY>&#xa;                    &lt;xsl:value-of select=&quot;$FaultDetails/ActivityName&quot;/>&#xa;                &lt;/ERROR_ACTIVITY>&#xa;                &lt;ERROR_CODE>&#xa;                    &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;                &lt;/ERROR_CODE>&#xa;                &lt;DATA_CNT>&#xa;                    &lt;xsl:value-of select=&quot;xsd:int(count($operationIn.parameters/REQUEST))&quot;/>&#xa;                &lt;/DATA_CNT>&#xa;            &lt;/tns7:TxInfo>&#xa;        &lt;/tns7:JobTotal>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:CallProcess
                                     subProcessName="com.fnf.eai.common.log.EAI_LOG" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
@@ -1090,7 +1206,7 @@
                             faultVariable="Throw-input" name="Throw" tibex:xpdlId="aef43a2f-8fad-4f51-b8bf-f6fcdf1ed2fe">
                             <tibex:inputBindings>
                                 <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_error&quot;/>&lt;xsl:template name=&quot;Throw-input&quot; match=&quot;/&quot;>&lt;tns4:DefaultFault>&lt;message>&lt;xsl:value-of select=&quot;substring-after($_error/StackTrace, &amp;quot;Caused&amp;quot;)&quot;/>&lt;/message>&lt;xsl:if test=&quot;$_error/MsgCode&quot;>&lt;msgCode>&lt;xsl:value-of select=&quot;$_error/MsgCode&quot;/>&lt;/msgCode>&lt;/xsl:if>&lt;/tns4:DefaultFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_error&quot;/>&lt;xsl:param name=&quot;_error_JDBCUpdate&quot;/>&lt;xsl:template name=&quot;Throw-input&quot; match=&quot;/&quot;>&lt;tns4:DefaultFault>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($_error_JDBCUpdate)&quot;>&lt;message>&lt;xsl:value-of select=&quot;substring-after($_error/StackTrace, &amp;quot;Caused&amp;quot;)&quot;/>&lt;/message>&lt;/xsl:when>&lt;xsl:otherwise>&lt;message>&lt;xsl:value-of select=&quot;$_error/Msg&quot;/>&lt;/message>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;xsl:if test=&quot;$_error/MsgCode&quot;>&lt;msgCode>&lt;xsl:value-of select=&quot;$_error/MsgCode&quot;/>&lt;/msgCode>&lt;/xsl:if>&lt;/tns4:DefaultFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                             </tibex:inputBindings>
                             <bpws:targets>
                                 <bpws:target linkName="LOG_ERRORToThrow"/>
@@ -1104,9 +1220,13 @@
             <bpws:links>
                 <bpws:link name="operationInToAssign_JobInfo" tibex:linkType="SUCCESS"/>
                 <bpws:link name="AssignToCallProcess" tibex:linkType="SUCCESS"/>
-                <bpws:link name="LOG_STARTToJDBCUpdate" tibex:linkType="SUCCESS"/>
+                <bpws:link name="LOG_otherwise" tibex:label="otherwise" tibex:linkType="SUCCESSWITHNOCONDITION"/>
                 <bpws:link name="JDBCUpdateToLOG_QUERY" tibex:linkType="SUCCESS"/>
                 <bpws:link name="LOG_QUERYToLOG_END" tibex:linkType="SUCCESS"/>
+                <bpws:link name="operationInToEmpty" tibex:linkType="ERROR"/>
+                <bpws:link name="EmptyToAssign_JobInfo" tibex:linkType="SUCCESS"/>
+                <bpws:link name="LOG_existserror"
+                    tibex:label="exists($_error)" tibex:linkType="SUCCESSWITHCONDITION"/>
             </bpws:links>
             <bpws:receive createInstance="yes" name="operationIn"
                 operation="operation" partnerLink="SAP_HERO_ONL_0001"
@@ -1114,6 +1234,13 @@
                 tibex:xpdlId="855a983c-d06c-40e8-ada3-c68c793765b9" variable="operationIn">
                 <bpws:sources>
                     <bpws:source linkName="operationInToAssign_JobInfo"/>
+                    <bpws:source linkName="operationInToEmpty"
+                        tibex:faultDetailsVar="operationIn" tibex:faultNameVar="FaultName">
+                        <tibex:DesignExpression>
+                            <tibex:expression expression="##error##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                        </tibex:DesignExpression>
+                        <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##error##]]></bpws:transitionCondition>
+                    </bpws:source>
                 </bpws:sources>
                 <bpws:correlations/>
             </bpws:receive>
@@ -1128,7 +1255,20 @@
                         <bpws:target linkName="AssignToCallProcess"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="LOG_STARTToJDBCUpdate"/>
+                        <bpws:source linkName="LOG_otherwise">
+                            <tibex:DesignExpression>
+                                <tibex:expression
+                                    expression="##otherwise##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            </tibex:DesignExpression>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##otherwise##]]></bpws:transitionCondition>
+                        </bpws:source>
+                        <bpws:source linkName="LOG_existserror">
+                            <tibex:DesignExpression>
+                                <tibex:expression
+                                    expression="exists($_error)" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            </tibex:DesignExpression>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[exists($_error)]]></bpws:transitionCondition>
+                        </bpws:source>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding coercion=""
@@ -1144,13 +1284,14 @@
                     tibex:xpdlId="656fab69-9727-49ad-8039-617eb19d9967" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="operationInToAssign_JobInfo"/>
+                        <bpws:target linkName="EmptyToAssign_JobInfo"/>
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="AssignToCallProcess"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; xmlns:tns10=&quot;http://www.example.org/ReqSchema&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:template name=&quot;JobInfo&quot; match=&quot;/&quot;>&lt;tns7:JobInfo>&lt;xsl:variable name=&quot;IF_ID&quot; select=&quot;substring(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), tib:last-index-of(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), '.')+1)&quot;/>&lt;xsl:variable name=&quot;CURR_TM&quot; select=&quot;format-dateTime(current-dateTime(), '[Y0001][M01][D01][H01][m01][s01][f001]')&quot;/>&lt;IF_ID>&lt;xsl:value-of select=&quot;$IF_ID&quot;/>&lt;/IF_ID>&lt;TR_ID>&lt;xsl:value-of select=&quot;concat($IF_ID, '', $CURR_TM, '', $_processContext/JobId)&quot;/>&lt;/TR_ID>&lt;CLIENT_IP>&lt;xsl:value-of select=&quot;''&quot;/>&lt;/CLIENT_IP>&lt;CLIENT_PORT>&lt;xsl:value-of select=&quot;''&quot;/>&lt;/CLIENT_PORT>&lt;/tns7:JobInfo>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:template name=&quot;JobInfo&quot; match=&quot;/&quot;>&lt;tns7:JobInfo>&lt;xsl:variable name=&quot;IF_ID&quot; select=&quot;substring(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), tib:last-index-of(bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;), '.')+1)&quot;/>&lt;xsl:variable name=&quot;CURR_TM&quot; select=&quot;format-dateTime(current-dateTime(), '[Y0001][M01][D01][H01][m01][s01][f001]')&quot;/>&lt;IF_ID>&lt;xsl:value-of select=&quot;$IF_ID&quot;/>&lt;/IF_ID>&lt;TR_ID>&lt;xsl:value-of select=&quot;concat($IF_ID, '', $CURR_TM, '', $_processContext/JobId)&quot;/>&lt;/TR_ID>&lt;SOURCE_PATH>&lt;xsl:value-of select=&quot;'/sap/BcoSaleitems'&quot;/>&lt;/SOURCE_PATH>&lt;CLIENT_IP>&lt;xsl:value-of select=&quot;''&quot;/>&lt;/CLIENT_IP>&lt;CLIENT_PORT>&lt;xsl:value-of select=&quot;''&quot;/>&lt;/CLIENT_PORT>&lt;/tns7:JobInfo>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1209,20 +1350,20 @@
             </bpws:extensionActivity>
             <bpws:extensionActivity>
                 <tibex:activityExtension
-                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+d8e39e09-ddcb-4760-a7cb-205fbd1756c2+input&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;operationIn&quot;/>&lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&lt;tns3:jdbcUpdateActivityInput>&lt;xsl:for-each select=&quot;$operationIn/parameters/tns1:operationRequest/REQUEST&quot;>&lt;Record>&lt;brand>&lt;xsl:value-of select=&quot;MATCHING_BRAND&quot;/>&lt;/brand>&lt;saledate>&lt;xsl:value-of select=&quot;AUDAT&quot;/>&lt;/saledate>&lt;shopcode>&lt;xsl:value-of select=&quot;ZZSITE&quot;/>&lt;/shopcode>&lt;userid>&lt;xsl:value-of select=&quot;ERNAM&quot;/>&lt;/userid>&lt;seq>&lt;xsl:value-of select=&quot;xsd:decimal(SEQ)&quot;/>&lt;/seq>&lt;season>&lt;xsl:copy-of select=&quot;SEASON/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SEASON&quot;/>&lt;/season>&lt;partcode>&lt;xsl:copy-of select=&quot;MATNR/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;MATNR&quot;/>&lt;/partcode>&lt;saletype>&lt;xsl:copy-of select=&quot;SALE_FG/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_FG&quot;/>&lt;/saletype>&lt;saletrtype>&lt;xsl:copy-of select=&quot;SALE_GUBUN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_GUBUN&quot;/>&lt;/saletrtype>&lt;listprice>&lt;xsl:copy-of select=&quot;UPRICE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;UPRICE&quot;/>&lt;/listprice>&lt;discountamt>&lt;xsl:copy-of select=&quot;DC_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DC_AMT&quot;/>&lt;/discountamt>&lt;discountpct>&lt;xsl:copy-of select=&quot;DC_RATE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DC_RATE&quot;/>&lt;/discountpct>&lt;sellprice>&lt;xsl:copy-of select=&quot;SELLPRICE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SELLPRICE&quot;/>&lt;/sellprice>&lt;qty>&lt;xsl:copy-of select=&quot;KWMENG/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;KWMENG&quot;/>&lt;/qty>&lt;listamt>&lt;xsl:copy-of select=&quot;SALE_TOT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_TOT&quot;/>&lt;/listamt>&lt;actualamt>&lt;xsl:copy-of select=&quot;SALE_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_AMT&quot;/>&lt;/actualamt>&lt;cid>&lt;xsl:copy-of select=&quot;CUST_ID/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUST_ID&quot;/>&lt;/cid>&lt;pos_no>&lt;xsl:copy-of select=&quot;POS_NO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;POS_NO&quot;/>&lt;/pos_no>&lt;sale_seq>&lt;xsl:value-of select=&quot;xsd:decimal(BILL_NO)&quot;/>&lt;/sale_seq>&lt;online_yn>&lt;xsl:copy-of select=&quot;ONLINE_YN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ONLINE_YN&quot;/>&lt;/online_yn>&lt;emp_use_point>&lt;xsl:copy-of select=&quot;EMP_DC_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;EMP_DC_AMT&quot;/>&lt;/emp_use_point>&lt;prom_code>&lt;xsl:copy-of select=&quot;ZZPRCODE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ZZPRCODE&quot;/>&lt;/prom_code>&lt;head_tag>&lt;xsl:copy-of select=&quot;SALE_TOT_H/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_TOT_H&quot;/>&lt;/head_tag>&lt;head_dc>&lt;xsl:copy-of select=&quot;DC_AMT_H/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DC_AMT_H&quot;/>&lt;/head_dc>&lt;head_act>&lt;xsl:copy-of select=&quot;HEAD_ACT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;HEAD_ACT&quot;/>&lt;/head_act>&lt;head_cnt>&lt;xsl:value-of select=&quot;xsd:decimal(HEAD_CNT)&quot;/>&lt;/head_cnt>&lt;alipay_yn>&lt;xsl:copy-of select=&quot;ALIPAY_YN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ALIPAY_YN&quot;/>&lt;/alipay_yn>&lt;vat>&lt;xsl:copy-of select=&quot;REFUND_VAT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REFUND_VAT&quot;/>&lt;/vat>&lt;vatr_yn>&lt;xsl:copy-of select=&quot;REFUND_YN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REFUND_YN&quot;/>&lt;/vatr_yn>&lt;vatr_refund>&lt;xsl:copy-of select=&quot;REFUND_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REFUND_AMT&quot;/>&lt;/vatr_refund>&lt;iud>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(IUD)&quot;>&lt;xsl:value-of select=&quot;IUD&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/iud>&lt;itf_type>&lt;xsl:copy-of select=&quot;ITF_TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ITF_TYPE&quot;/>&lt;/itf_type>&lt;vbeln>&lt;xsl:copy-of select=&quot;VBELN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;VBELN&quot;/>&lt;/vbeln>&lt;c_ord_seq>&lt;xsl:copy-of select=&quot;BSTNK_VF/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;BSTNK_VF&quot;/>&lt;/c_ord_seq>&lt;/Record>&lt;/xsl:for-each>&lt;/tns3:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+d8e39e09-ddcb-4760-a7cb-205fbd1756c2+input&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;operationIn&quot;/>&lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&lt;tns3:jdbcUpdateActivityInput>&lt;xsl:for-each select=&quot;$operationIn/parameters/tns1:operationRequest/REQUEST&quot;>&lt;Record>&lt;brand>&lt;xsl:value-of select=&quot;MATCHING_BRAND&quot;/>&lt;/brand>&lt;saledate>&lt;xsl:value-of select=&quot;AUDAT&quot;/>&lt;/saledate>&lt;shopcode>&lt;xsl:value-of select=&quot;ZZSITE&quot;/>&lt;/shopcode>&lt;userid>&lt;xsl:value-of select=&quot;ERNAM&quot;/>&lt;/userid>&lt;seq>&lt;xsl:value-of select=&quot;xsd:decimal(SEQ)&quot;/>&lt;/seq>&lt;season>&lt;xsl:copy-of select=&quot;SEASON/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SEASON&quot;/>&lt;/season>&lt;partcode>&lt;xsl:copy-of select=&quot;MATNR/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;MATNR&quot;/>&lt;/partcode>&lt;saletype>&lt;xsl:copy-of select=&quot;SALE_FG/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_FG&quot;/>&lt;/saletype>&lt;saletrtype>&lt;xsl:copy-of select=&quot;SALE_GUBUN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_GUBUN&quot;/>&lt;/saletrtype>&lt;listprice>&lt;xsl:copy-of select=&quot;UPRICE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;UPRICE&quot;/>&lt;/listprice>&lt;discountamt>&lt;xsl:copy-of select=&quot;DC_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DC_AMT&quot;/>&lt;/discountamt>&lt;discountpct>&lt;xsl:copy-of select=&quot;DC_RATE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DC_RATE&quot;/>&lt;/discountpct>&lt;sellprice>&lt;xsl:copy-of select=&quot;SELLPRICE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SELLPRICE&quot;/>&lt;/sellprice>&lt;qty>&lt;xsl:copy-of select=&quot;KWMENG/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;KWMENG&quot;/>&lt;/qty>&lt;listamt>&lt;xsl:copy-of select=&quot;SALE_TOT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_TOT&quot;/>&lt;/listamt>&lt;actualamt>&lt;xsl:copy-of select=&quot;SALE_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_AMT&quot;/>&lt;/actualamt>&lt;cid>&lt;xsl:copy-of select=&quot;CUST_ID/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUST_ID&quot;/>&lt;/cid>&lt;pos_no>&lt;xsl:copy-of select=&quot;POS_NO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;POS_NO&quot;/>&lt;/pos_no>&lt;sale_seq>&lt;xsl:value-of select=&quot;xsd:decimal(BILL_NO)&quot;/>&lt;/sale_seq>&lt;online_yn>&lt;xsl:copy-of select=&quot;ONLINE_YN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ONLINE_YN&quot;/>&lt;/online_yn>&lt;emp_use_point>&lt;xsl:copy-of select=&quot;EMP_DC_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;EMP_DC_AMT&quot;/>&lt;/emp_use_point>&lt;prom_code>&lt;xsl:copy-of select=&quot;ZZPRCODE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ZZPRCODE&quot;/>&lt;/prom_code>&lt;head_tag>&lt;xsl:copy-of select=&quot;SALE_TOT_H/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SALE_TOT_H&quot;/>&lt;/head_tag>&lt;head_dc>&lt;xsl:copy-of select=&quot;DC_AMT_H/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DC_AMT_H&quot;/>&lt;/head_dc>&lt;head_act>&lt;xsl:copy-of select=&quot;HEAD_ACT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;HEAD_ACT&quot;/>&lt;/head_act>&lt;head_cnt>&lt;xsl:copy-of select=&quot;HEAD_CNT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;HEAD_CNT&quot;/>&lt;/head_cnt>&lt;alipay_yn>&lt;xsl:copy-of select=&quot;ALIPAY_YN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ALIPAY_YN&quot;/>&lt;/alipay_yn>&lt;vat>&lt;xsl:copy-of select=&quot;REFUND_VAT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REFUND_VAT&quot;/>&lt;/vat>&lt;vatr_yn>&lt;xsl:copy-of select=&quot;REFUND_YN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REFUND_YN&quot;/>&lt;/vatr_yn>&lt;vatr_refund>&lt;xsl:copy-of select=&quot;REFUND_AMT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REFUND_AMT&quot;/>&lt;/vatr_refund>&lt;iud>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(IUD)&quot;>&lt;xsl:value-of select=&quot;IUD&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/iud>&lt;itf_type>&lt;xsl:copy-of select=&quot;ITF_TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ITF_TYPE&quot;/>&lt;/itf_type>&lt;vbeln>&lt;xsl:copy-of select=&quot;VBELN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;VBELN&quot;/>&lt;/vbeln>&lt;c_ord_seq>&lt;xsl:copy-of select=&quot;BSTNK_VF/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;BSTNK_VF&quot;/>&lt;/c_ord_seq>&lt;/Record>&lt;/xsl:for-each>&lt;/tns3:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                     inputVariable="JDBCUpdate-input" name="JDBCUpdate"
                     outputVariable="JDBCUpdate"
                     tibex:xpdlId="d8e39e09-ddcb-4760-a7cb-205fbd1756c2" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="LOG_STARTToJDBCUpdate"/>
+                        <bpws:target linkName="LOG_otherwise"/>
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="JDBCUpdateToLOG_QUERY"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+d8e39e09-ddcb-4760-a7cb-205fbd1756c2+input&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;operationIn.parameters&quot;/>&#xa;    &lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:jdbcUpdateActivityInput>&#xa;            &lt;xsl:for-each select=&quot;$operationIn.parameters/REQUEST&quot;>&#xa;                &lt;Record>&#xa;                    &lt;brand>&#xa;                        &lt;xsl:value-of select=&quot;MATCHING_BRAND&quot;/>&#xa;                    &lt;/brand>&#xa;                    &lt;saledate>&#xa;                        &lt;xsl:value-of select=&quot;AUDAT&quot;/>&#xa;                    &lt;/saledate>&#xa;                    &lt;shopcode>&#xa;                        &lt;xsl:value-of select=&quot;ZZSITE&quot;/>&#xa;                    &lt;/shopcode>&#xa;                    &lt;userid>&#xa;                        &lt;xsl:value-of select=&quot;ERNAM&quot;/>&#xa;                    &lt;/userid>&#xa;                    &lt;seq>&#xa;                        &lt;xsl:value-of select=&quot;xsd:decimal(SEQ)&quot;/>&#xa;                    &lt;/seq>&#xa;                    &lt;season>&#xa;                        &lt;xsl:copy-of select=&quot;SEASON/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SEASON&quot;/>&#xa;                    &lt;/season>&#xa;                    &lt;partcode>&#xa;                        &lt;xsl:copy-of select=&quot;MATNR/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;MATNR&quot;/>&#xa;                    &lt;/partcode>&#xa;                    &lt;saletype>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_FG/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_FG&quot;/>&#xa;                    &lt;/saletype>&#xa;                    &lt;saletrtype>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_GUBUN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_GUBUN&quot;/>&#xa;                    &lt;/saletrtype>&#xa;                    &lt;listprice>&#xa;                        &lt;xsl:copy-of select=&quot;UPRICE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;UPRICE&quot;/>&#xa;                    &lt;/listprice>&#xa;                    &lt;discountamt>&#xa;                        &lt;xsl:copy-of select=&quot;DC_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;DC_AMT&quot;/>&#xa;                    &lt;/discountamt>&#xa;                    &lt;discountpct>&#xa;                        &lt;xsl:copy-of select=&quot;DC_RATE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;DC_RATE&quot;/>&#xa;                    &lt;/discountpct>&#xa;                    &lt;sellprice>&#xa;                        &lt;xsl:copy-of select=&quot;SELLPRICE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SELLPRICE&quot;/>&#xa;                    &lt;/sellprice>&#xa;                    &lt;qty>&#xa;                        &lt;xsl:copy-of select=&quot;KWMENG/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;KWMENG&quot;/>&#xa;                    &lt;/qty>&#xa;                    &lt;listamt>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_TOT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_TOT&quot;/>&#xa;                    &lt;/listamt>&#xa;                    &lt;actualamt>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_AMT&quot;/>&#xa;                    &lt;/actualamt>&#xa;                    &lt;cid>&#xa;                        &lt;xsl:copy-of select=&quot;CUST_ID/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;CUST_ID&quot;/>&#xa;                    &lt;/cid>&#xa;                    &lt;pos_no>&#xa;                        &lt;xsl:copy-of select=&quot;POS_NO/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;POS_NO&quot;/>&#xa;                    &lt;/pos_no>&#xa;                    &lt;sale_seq>&#xa;                        &lt;xsl:value-of select=&quot;xsd:decimal(BILL_NO)&quot;/>&#xa;                    &lt;/sale_seq>&#xa;                    &lt;online_yn>&#xa;                        &lt;xsl:copy-of select=&quot;ONLINE_YN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ONLINE_YN&quot;/>&#xa;                    &lt;/online_yn>&#xa;                    &lt;emp_use_point>&#xa;                        &lt;xsl:copy-of select=&quot;EMP_DC_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;EMP_DC_AMT&quot;/>&#xa;                    &lt;/emp_use_point>&#xa;                    &lt;prom_code>&#xa;                        &lt;xsl:copy-of select=&quot;ZZPRCODE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ZZPRCODE&quot;/>&#xa;                    &lt;/prom_code>&#xa;                    &lt;head_tag>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_TOT_H/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_TOT_H&quot;/>&#xa;                    &lt;/head_tag>&#xa;                    &lt;head_dc>&#xa;                        &lt;xsl:copy-of select=&quot;DC_AMT_H/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;DC_AMT_H&quot;/>&#xa;                    &lt;/head_dc>&#xa;                    &lt;head_act>&#xa;                        &lt;xsl:copy-of select=&quot;HEAD_ACT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;HEAD_ACT&quot;/>&#xa;                    &lt;/head_act>&#xa;                    &lt;head_cnt>&#xa;                        &lt;xsl:value-of select=&quot;xsd:decimal(HEAD_CNT)&quot;/>&#xa;                    &lt;/head_cnt>&#xa;                    &lt;alipay_yn>&#xa;                        &lt;xsl:copy-of select=&quot;ALIPAY_YN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ALIPAY_YN&quot;/>&#xa;                    &lt;/alipay_yn>&#xa;                    &lt;vat>&#xa;                        &lt;xsl:copy-of select=&quot;REFUND_VAT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;REFUND_VAT&quot;/>&#xa;                    &lt;/vat>&#xa;                    &lt;vatr_yn>&#xa;                        &lt;xsl:copy-of select=&quot;REFUND_YN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;REFUND_YN&quot;/>&#xa;                    &lt;/vatr_yn>&#xa;                    &lt;vatr_refund>&#xa;                        &lt;xsl:copy-of select=&quot;REFUND_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;REFUND_AMT&quot;/>&#xa;                    &lt;/vatr_refund>&#xa;                    &lt;iud>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(IUD)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;IUD&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/iud>&#xa;                    &lt;itf_type>&#xa;                        &lt;xsl:copy-of select=&quot;ITF_TYPE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ITF_TYPE&quot;/>&#xa;                    &lt;/itf_type>&#xa;                    &lt;vbeln>&#xa;                        &lt;xsl:copy-of select=&quot;VBELN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;VBELN&quot;/>&#xa;                    &lt;/vbeln>&#xa;                    &lt;c_ord_seq>&#xa;                        &lt;xsl:copy-of select=&quot;BSTNK_VF/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;BSTNK_VF&quot;/>&#xa;                    &lt;/c_ord_seq>&#xa;                &lt;/Record>&#xa;            &lt;/xsl:for-each>&#xa;        &lt;/tns3:jdbcUpdateActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+d8e39e09-ddcb-4760-a7cb-205fbd1756c2+input&quot; xmlns:tns1=&quot;http://www.example.org/schema/1621317293339&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;operationIn.parameters&quot;/>&#xa;    &lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:jdbcUpdateActivityInput>&#xa;            &lt;xsl:for-each select=&quot;$operationIn.parameters/REQUEST&quot;>&#xa;                &lt;Record>&#xa;                    &lt;brand>&#xa;                        &lt;xsl:value-of select=&quot;MATCHING_BRAND&quot;/>&#xa;                    &lt;/brand>&#xa;                    &lt;saledate>&#xa;                        &lt;xsl:value-of select=&quot;AUDAT&quot;/>&#xa;                    &lt;/saledate>&#xa;                    &lt;shopcode>&#xa;                        &lt;xsl:value-of select=&quot;ZZSITE&quot;/>&#xa;                    &lt;/shopcode>&#xa;                    &lt;userid>&#xa;                        &lt;xsl:value-of select=&quot;ERNAM&quot;/>&#xa;                    &lt;/userid>&#xa;                    &lt;seq>&#xa;                        &lt;xsl:value-of select=&quot;xsd:decimal(SEQ)&quot;/>&#xa;                    &lt;/seq>&#xa;                    &lt;season>&#xa;                        &lt;xsl:copy-of select=&quot;SEASON/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SEASON&quot;/>&#xa;                    &lt;/season>&#xa;                    &lt;partcode>&#xa;                        &lt;xsl:copy-of select=&quot;MATNR/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;MATNR&quot;/>&#xa;                    &lt;/partcode>&#xa;                    &lt;saletype>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_FG/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_FG&quot;/>&#xa;                    &lt;/saletype>&#xa;                    &lt;saletrtype>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_GUBUN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_GUBUN&quot;/>&#xa;                    &lt;/saletrtype>&#xa;                    &lt;listprice>&#xa;                        &lt;xsl:copy-of select=&quot;UPRICE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;UPRICE&quot;/>&#xa;                    &lt;/listprice>&#xa;                    &lt;discountamt>&#xa;                        &lt;xsl:copy-of select=&quot;DC_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;DC_AMT&quot;/>&#xa;                    &lt;/discountamt>&#xa;                    &lt;discountpct>&#xa;                        &lt;xsl:copy-of select=&quot;DC_RATE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;DC_RATE&quot;/>&#xa;                    &lt;/discountpct>&#xa;                    &lt;sellprice>&#xa;                        &lt;xsl:copy-of select=&quot;SELLPRICE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SELLPRICE&quot;/>&#xa;                    &lt;/sellprice>&#xa;                    &lt;qty>&#xa;                        &lt;xsl:copy-of select=&quot;KWMENG/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;KWMENG&quot;/>&#xa;                    &lt;/qty>&#xa;                    &lt;listamt>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_TOT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_TOT&quot;/>&#xa;                    &lt;/listamt>&#xa;                    &lt;actualamt>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_AMT&quot;/>&#xa;                    &lt;/actualamt>&#xa;                    &lt;cid>&#xa;                        &lt;xsl:copy-of select=&quot;CUST_ID/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;CUST_ID&quot;/>&#xa;                    &lt;/cid>&#xa;                    &lt;pos_no>&#xa;                        &lt;xsl:copy-of select=&quot;POS_NO/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;POS_NO&quot;/>&#xa;                    &lt;/pos_no>&#xa;                    &lt;sale_seq>&#xa;                        &lt;xsl:value-of select=&quot;xsd:decimal(BILL_NO)&quot;/>&#xa;                    &lt;/sale_seq>&#xa;                    &lt;online_yn>&#xa;                        &lt;xsl:copy-of select=&quot;ONLINE_YN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ONLINE_YN&quot;/>&#xa;                    &lt;/online_yn>&#xa;                    &lt;emp_use_point>&#xa;                        &lt;xsl:copy-of select=&quot;EMP_DC_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;EMP_DC_AMT&quot;/>&#xa;                    &lt;/emp_use_point>&#xa;                    &lt;prom_code>&#xa;                        &lt;xsl:copy-of select=&quot;ZZPRCODE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ZZPRCODE&quot;/>&#xa;                    &lt;/prom_code>&#xa;                    &lt;head_tag>&#xa;                        &lt;xsl:copy-of select=&quot;SALE_TOT_H/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;SALE_TOT_H&quot;/>&#xa;                    &lt;/head_tag>&#xa;                    &lt;head_dc>&#xa;                        &lt;xsl:copy-of select=&quot;DC_AMT_H/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;DC_AMT_H&quot;/>&#xa;                    &lt;/head_dc>&#xa;                    &lt;head_act>&#xa;                        &lt;xsl:copy-of select=&quot;HEAD_ACT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;HEAD_ACT&quot;/>&#xa;                    &lt;/head_act>&#xa;                    &lt;head_cnt>&#xa;                        &lt;xsl:copy-of select=&quot;HEAD_CNT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;HEAD_CNT&quot;/>&#xa;                    &lt;/head_cnt>&#xa;                    &lt;alipay_yn>&#xa;                        &lt;xsl:copy-of select=&quot;ALIPAY_YN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ALIPAY_YN&quot;/>&#xa;                    &lt;/alipay_yn>&#xa;                    &lt;vat>&#xa;                        &lt;xsl:copy-of select=&quot;REFUND_VAT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;REFUND_VAT&quot;/>&#xa;                    &lt;/vat>&#xa;                    &lt;vatr_yn>&#xa;                        &lt;xsl:copy-of select=&quot;REFUND_YN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;REFUND_YN&quot;/>&#xa;                    &lt;/vatr_yn>&#xa;                    &lt;vatr_refund>&#xa;                        &lt;xsl:copy-of select=&quot;REFUND_AMT/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;REFUND_AMT&quot;/>&#xa;                    &lt;/vatr_refund>&#xa;                    &lt;iud>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(IUD)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;IUD&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/iud>&#xa;                    &lt;itf_type>&#xa;                        &lt;xsl:copy-of select=&quot;ITF_TYPE/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;ITF_TYPE&quot;/>&#xa;                    &lt;/itf_type>&#xa;                    &lt;vbeln>&#xa;                        &lt;xsl:copy-of select=&quot;VBELN/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;VBELN&quot;/>&#xa;                    &lt;/vbeln>&#xa;                    &lt;c_ord_seq>&#xa;                        &lt;xsl:copy-of select=&quot;BSTNK_VF/@xsi:nil&quot;/>&#xa;                        &lt;xsl:value-of select=&quot;BSTNK_VF&quot;/>&#xa;                    &lt;/c_ord_seq>&#xa;                &lt;/Record>&#xa;            &lt;/xsl:for-each>&#xa;        &lt;/tns3:jdbcUpdateActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1285,8 +1426,9 @@
                                     <PreparedParameters
                                     DataType="12"
                                     DataTypeDisplayValue="VARCHAR" ParameterName="pos_no"/>
-                                    <PreparedParameters DataType="2"
-                                    DataTypeDisplayValue="NUMERIC" ParameterName="sale_seq"/>
+                                    <PreparedParameters
+                                    DataType="12"
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="sale_seq"/>
                                     <PreparedParameters
                                     DataType="12"
                                     DataTypeDisplayValue="VARCHAR" ParameterName="online_yn"/>
@@ -1301,8 +1443,9 @@
                                     DataTypeDisplayValue="NUMERIC" ParameterName="head_dc"/>
                                     <PreparedParameters DataType="2"
                                     DataTypeDisplayValue="NUMERIC" ParameterName="head_act"/>
-                                    <PreparedParameters DataType="2"
-                                    DataTypeDisplayValue="NUMERIC" ParameterName="head_cnt"/>
+                                    <PreparedParameters
+                                    DataType="12"
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="head_cnt"/>
                                     <PreparedParameters
                                     DataType="12"
                                     DataTypeDisplayValue="VARCHAR" ParameterName="alipay_yn"/>
@@ -1332,6 +1475,24 @@
                     </tibex:config>
                 </tibex:activityExtension>
             </bpws:extensionActivity>
+            <bpws:throw faultName="ns8:DefaultFault"
+                faultVariable="Throw1-input" name="Throw1" tibex:xpdlId="6831ec25-a65c-4a07-bed3-d654244229a9">
+                <tibex:inputBindings>
+                    <tibex:partBinding
+                        expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_error&quot;/>&lt;xsl:template name=&quot;Throw1-input&quot; match=&quot;/&quot;>&lt;tns4:DefaultFault>&lt;xsl:if test=&quot;$_error/Msg&quot;>&lt;message>&lt;xsl:value-of select=&quot;$_error/Msg&quot;/>&lt;/message>&lt;/xsl:if>&lt;xsl:if test=&quot;$_error/MsgCode&quot;>&lt;msgCode>&lt;xsl:value-of select=&quot;$_error/MsgCode&quot;/>&lt;/msgCode>&lt;/xsl:if>&lt;/tns4:DefaultFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                </tibex:inputBindings>
+                <bpws:targets>
+                    <bpws:target linkName="LOG_existserror"/>
+                </bpws:targets>
+            </bpws:throw>
+            <bpws:empty name="Empty" tibex:xpdlId="7261f87c-5a28-4315-ab18-fdab4697b594">
+                <bpws:targets>
+                    <bpws:target linkName="operationInToEmpty"/>
+                </bpws:targets>
+                <bpws:sources>
+                    <bpws:source linkName="EmptyToAssign_JobInfo"/>
+                </bpws:sources>
+            </bpws:empty>
         </bpws:flow>
     </bpws:scope>
 </bpws:process>
