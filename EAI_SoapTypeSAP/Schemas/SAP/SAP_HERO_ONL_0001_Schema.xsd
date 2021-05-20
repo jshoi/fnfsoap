@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/schema/1621317293339" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://www.example.org/schema/1621317293339">
+	<element name="operationRequest">
+
+		<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" minOccurs="0" name="REQUEST">
+					<complexType>
+						<sequence>
+							<element maxOccurs="1" minOccurs="1" name="MATCHING_BRAND" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="2"/>
+									</restriction>
+								</simpleType>
+							</element>
+							<element maxOccurs="1" minOccurs="1" name="AUDAT" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="8"/>
+									</restriction>
+								</simpleType>
+							</element>
+							<element maxOccurs="1" minOccurs="1" name="ZZSITE" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="4"/>
+									</restriction>
+								</simpleType>
+							</element>
+							<element maxOccurs="1" minOccurs="1" name="ERNAM" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="12"/>
+									</restriction>
+								</simpleType>
+							</element>
+							<element maxOccurs="1" minOccurs="1" name="SEQ" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="4"/>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SEASON" type="string"/>
+							<element name="MATNR" type="string"/>
+							<element name="COLOR" type="string"/>
+							<element name="SIZ" type="string"/>
+							<element name="SALE_FG" type="string"/>
+							<element name="SALE_GUBUN" type="string"/>
+							<element name="UPRICE" type="string"/>
+							<element name="DC_AMT" type="string"/>
+							<element name="DC_RATE" type="string"/>
+							<element name="SELLPRICE" type="string"/>
+							<element name="KWMENG" type="string"/>
+							<element name="SALE_TOT" type="string"/>
+							<element name="SALE_AMT" type="string"/>
+							<element name="CUST_ID" type="string"/>
+							<element name="POS_NO" type="string"/>
+							<element name="BILL_NO" type="string"/>
+							<element name="ONLINE_YN" type="string"/>
+							<element name="EMP_DC_AMT" type="string"/>
+							<element name="ZZPRCODE" type="string"/>
+							<element name="SALE_TOT_H" type="string"/>
+							<element name="DC_AMT_H" type="string"/>
+							<element name="HEAD_ACT" type="string"/>
+							<element name="HEAD_CNT" type="string"/>
+							<element name="ALIPAY_YN" type="string"/>
+							<element name="REFUND_VAT" type="string"/>
+							<element name="REFUND_YN" type="string"/>
+							<element name="REFUND_AMT" type="string"/>
+							<element name="IUD" type="string"/>
+							<element name="ITF_TYPE" type="string"/>
+							<element name="VBELN" type="string"/>
+							<element name="BSTNK_VF" type="string"/>
+
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="operationResponse">
+		<complexType>
+			<sequence>
+				<element name="out" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+    <element name="operation1Request">
+    <complexType>
+      <sequence>
+        <element name="in" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>

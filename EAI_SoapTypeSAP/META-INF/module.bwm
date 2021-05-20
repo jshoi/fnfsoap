@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:schema_1621312105438="http://www.example.org/schema/1621312105438" xmlns:schema_1621317293339="http://www.example.org/schema/1621317293339" xmlns:schema_1621319540278="http://www.example.org/schema/1621319540278" xmlns:wsdl_1621312105271="http://www.example.org/wsdl/1621312105271" xmlns:wsdl_1621315005905="http://www.example.org/wsdl/1621315005905" xmlns:wsdl_1621317293130="http://www.example.org/wsdl/1621317293130" xmlns:wsdl_1621319540055="http://www.example.org/wsdl/1621319540055" xmlns:wsdl_1621319811853="http://www.example.org/wsdl/1621319811853" xmi:id="_U03cMLePEeuwy9ua3obqNw" targetNamespace="http://tns.tibco.com/bw/composite/EAI_SoapTypeSAP" name="EAI_SoapTypeSAP" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_dZHlIrejEeuEDd4UQo8NRQ" name="SAP_HERO_ONL_0001" promote="ComponentSAP_HERO_ONL_0001/SAP_HERO_ONL_0001">
+    <sca:interface.wsdl xmi:id="_dZHlJrejEeuEDd4UQo8NRQ" interface="http://www.example.org/wsdl/1621319811853#wsdl.interface(SAP_HERO_ONL_0001)"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_fzmDgLejEeuEDd4UQo8NRQ" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/1173360d11e0413bb6d088248079b06f/SOAPServiceBinding" portTypeQName="wsdl_1621319811853:SAP_HERO_ONL_0001" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/EAI_SoapTypeSAP/Service%20Descriptors/SAP_HERO_ONL_0001.wsdl">
+      <bindingType xmi:id="_JWkK4LelEeuEDd4UQo8NRQ"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_kOF44LejEeuEDd4UQo8NRQ" endpointURI="/SAP_HERO_ONL_0001/" httpConnector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource"/>
+      <operationConfiguration xmi:id="_JWkK4belEeuEDd4UQo8NRQ" description="" operationName="operation" action="operation" actionNeeded="true">
+        <bindingType xmi:id="_JWkK4relEeuEDd4UQo8NRQ"/>
+        <messageConfiguration xmi:id="_JWkK47elEeuEDd4UQo8NRQ" messageQName="wsdl_1621319811853:operationRequest" wsdlLocation="platform:/resource/EAI_SoapTypeSAP/Service%20Descriptors/SAP_HERO_ONL_0001.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_JWkK5LelEeuEDd4UQo8NRQ" partName="parameters" partElementName="schema_1621317293339:operationRequest"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_JWkK5belEeuEDd4UQo8NRQ" messageQName="wsdl_1621319811853:operationResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/EAI_SoapTypeSAP/Service%20Descriptors/SAP_HERO_ONL_0001.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_JWkK5relEeuEDd4UQo8NRQ" partName="parameters" partElementName="schema_1621317293339:operationResponse"/>
+        </messageConfiguration>
+        <context xmi:id="_JWkK57elEeuEDd4UQo8NRQ">
+          <inputMapping xmi:id="_JWkK6LelEeuEDd4UQo8NRQ"/>
+          <outputMapping xmi:id="_JWkK6belEeuEDd4UQo8NRQ" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_5wmBoLkPEeuEDd4UQo8NRQ" operationName="operation1" action="operation1" actionNeeded="true">
+        <bindingType xmi:id="_5wmBobkPEeuEDd4UQo8NRQ"/>
+        <messageConfiguration xmi:id="_5wmBorkPEeuEDd4UQo8NRQ" messageQName="wsdl_1621319811853:operation1Request" wsdlLocation="platform:/resource/EAI_SoapTypeSAP/Service%20Descriptors/SAP_HERO_ONL_0001.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_5wmBo7kPEeuEDd4UQo8NRQ" partName="parameters" partElementName="schema_1621317293339:operation1Request"/>
+        </messageConfiguration>
+        <context xmi:id="_5wmBpLkPEeuEDd4UQo8NRQ">
+          <inputMapping xmi:id="_5wmosLkPEeuEDd4UQo8NRQ"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+  </sca:service>
+  <sca:property xmi:id="_U5OXwLePEeuwy9ua3obqNw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U5bMELePEeuwy9ua3obqNw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U5mLMLePEeuwy9ua3obqNw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U50NoLePEeuwy9ua3obqNw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U6BpALePEeuwy9ua3obqNw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U6PEYLePEeuwy9ua3obqNw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U6b4sLePEeuwy9ua3obqNw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U6p7ILePEeuwy9ua3obqNw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U639kLePEeuwy9ua3obqNw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Fab58LkNEeuEDd4UQo8NRQ" name="newProperty1" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pg-AELkJEeuEDd4UQo8NRQ" name="/CRM_INFO/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_s5QxkLkJEeuEDd4UQo8NRQ" name="/CRM_INFO/password" type="property:password" scaext:simpleValue="#!9G5kweVD2UavkwFVyP94gw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_t-waALkJEeuEDd4UQo8NRQ" name="/CRM_INFO/url" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_F-phoLkKEeuEDd4UQo8NRQ" name="/CRM_INFO/maxconnection" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hdvCELkMEeuEDd4UQo8NRQ" name="/COMMON/LOG_LEVEL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jnzs8LkMEeuEDd4UQo8NRQ" name="/COMMON/ENV" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_o1ZMILkMEeuEDd4UQo8NRQ" name="/DB_INFO/MAX_ROW" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rRmI0LkMEeuEDd4UQo8NRQ" name="/DB_INFO/SUBSET_SIZE" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_sog4cLkMEeuEDd4UQo8NRQ" name="/DB_INFO/TIME_OUT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_trOSoLkMEeuEDd4UQo8NRQ" name="/DB_INFO/MAX_ROW_LONG" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C0hnoLkNEeuEDd4UQo8NRQ" name="/EAI_INFO/JMS/URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Fo5MsLkNEeuEDd4UQo8NRQ" name="/EAI_INFO/JMS/USERNAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HFd4YLkNEeuEDd4UQo8NRQ" name="/EAI_INFO/JMS/PASSWORD" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_ys5hQLeiEeuEDd4UQo8NRQ" name="ComponentSAP_HERO_ONL_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ys5hQbeiEeuEDd4UQo8NRQ" processName="com.fnf.eai.sap.hero.soap.SAP_HERO_ONL_0001"/>
+    <sca:service xmi:id="_dZHlILejEeuEDd4UQo8NRQ" name="SAP_HERO_ONL_0001">
+      <sca:interface.wsdl xmi:id="_dZHlIbejEeuEDd4UQo8NRQ" interface="http://www.example.org/wsdl/1621319811853#wsdl.interface(SAP_HERO_ONL_0001)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
