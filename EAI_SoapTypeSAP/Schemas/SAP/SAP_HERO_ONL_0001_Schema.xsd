@@ -7,72 +7,259 @@
 				<element maxOccurs="unbounded" minOccurs="0" name="REQUEST">
 					<complexType>
 						<sequence>
-							<element maxOccurs="1" minOccurs="1" name="MATCHING_BRAND" nillable="true">
+							<element maxOccurs="1" minOccurs="1" name="MATCHING_BRAND" nillable="false">
 								<simpleType>
 									<restriction base="string">
 										<maxLength value="2"/>
 									</restriction>
 								</simpleType>
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="AUDAT" nillable="true">
+							<element maxOccurs="1" minOccurs="1" name="AUDAT" nillable="false">
 								<simpleType>
 									<restriction base="string">
 										<maxLength value="8"/>
 									</restriction>
 								</simpleType>
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="ZZSITE" nillable="true">
+							<element maxOccurs="1" minOccurs="1" name="ZZSITE" nillable="false">
 								<simpleType>
 									<restriction base="string">
 										<maxLength value="4"/>
 									</restriction>
 								</simpleType>
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="ERNAM" nillable="true">
+							<element maxOccurs="1" minOccurs="1" name="ERNAM" nillable="false">
 								<simpleType>
 									<restriction base="string">
 										<maxLength value="12"/>
 									</restriction>
 								</simpleType>
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="SEQ" nillable="true">
+							<element maxOccurs="1" minOccurs="1" name="SEQ" nillable="false">
 								<simpleType>
 									<restriction base="string">
 										<maxLength value="4"/>
 									</restriction>
 								</simpleType>
 							</element>
-							<element name="SEASON" type="string"/>
-							<element name="MATNR" type="string"/>
-							<element name="COLOR" type="string"/>
-							<element name="SIZ" type="string"/>
-							<element name="SALE_FG" type="string"/>
-							<element name="SALE_GUBUN" type="string"/>
-							<element name="UPRICE" type="string"/>
-							<element name="DC_AMT" type="string"/>
-							<element name="DC_RATE" type="string"/>
-							<element name="SELLPRICE" type="string"/>
-							<element name="KWMENG" type="string"/>
-							<element name="SALE_TOT" type="string"/>
-							<element name="SALE_AMT" type="string"/>
-							<element name="CUST_ID" type="string"/>
-							<element name="POS_NO" type="string"/>
-							<element name="BILL_NO" type="string"/>
-							<element name="ONLINE_YN" type="string"/>
-							<element name="EMP_DC_AMT" type="string"/>
-							<element name="ZZPRCODE" type="string"/>
-							<element name="SALE_TOT_H" type="string"/>
-							<element name="DC_AMT_H" type="string"/>
-							<element name="HEAD_ACT" type="string"/>
-							<element name="HEAD_CNT" type="string"/>
-							<element name="ALIPAY_YN" type="string"/>
-							<element name="REFUND_VAT" type="string"/>
-							<element name="REFUND_YN" type="string"/>
-							<element name="REFUND_AMT" type="string"/>
-							<element name="IUD" type="string"/>
-							<element name="ITF_TYPE" type="string"/>
-							<element name="VBELN" type="string"/>
-							<element name="BSTNK_VF" type="string"/>
+							<element name="SEASON" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="2"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="MATNR" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="18"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="COLOR" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="10"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SIZ" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="10"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SALE_FG" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="1"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SALE_GUBUN"
+								nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="1"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="UPRICE" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="DC_AMT" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="DC_RATE" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SELLPRICE" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="KWMENG" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="8"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SALE_TOT" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SALE_AMT" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="CUST_ID" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="10"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="POS_NO" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="2"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="BILL_NO" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="4"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="ONLINE_YN" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="1"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="EMP_DC_AMT"
+								nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="ZZPRCODE" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="10"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="SALE_TOT_H"
+								nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="DC_AMT_H" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="HEAD_ACT" nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="HEAD_CNT" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="4"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="ALIPAY_YN" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="1"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="REFUND_VAT"
+								nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="REFUND_YN" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="1"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="REFUND_AMT"
+								nillable="true">
+								<simpleType>
+									<restriction base="decimal">
+										<maxExclusive value="11"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="IUD" nillable="false" type="integer">
+
+							</element>
+							<element name="ITF_TYPE" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="1"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="VBELN" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="12"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="BSTNK_VF" nillable="true">
+								<simpleType>
+									<restriction base="string">
+										<maxLength value="35"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
 
 						</sequence>
 					</complexType>
@@ -86,12 +273,5 @@
 				<element name="out" type="string"/>
 			</sequence>
 		</complexType>
-	</element>
-    <element name="operation1Request">
-    <complexType>
-      <sequence>
-        <element name="in" type="string"/>
-      </sequence>
-    </complexType>
-  </element>
+	</element>
 </schema>
