@@ -7,84 +7,28 @@
 				<element maxOccurs="unbounded" minOccurs="0" name="REQUEST">
 					<complexType>
 						<sequence>
-							<element maxOccurs="1" minOccurs="1" name="MATCHING_BRAND" nillable="false">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="2" />
-
-									</restriction>
-								</simpleType>
+							<element maxOccurs="1" minOccurs="1" name="MATCHING_BRAND" nillable="false" type="string">
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="AUDAT" nillable="false">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="8"/>
-									</restriction>
-								</simpleType>
+							<element maxOccurs="1" minOccurs="1" name="AUDAT" nillable="false" type="string">
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="ZZSITE" nillable="false">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="10" />
-									</restriction>
-								</simpleType>
+							<element maxOccurs="1" minOccurs="1" name="ZZSITE" nillable="false" type="string">
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="ERNAM" nillable="false">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="12"/>
-									</restriction>
-								</simpleType>
+							<element maxOccurs="1" minOccurs="1" name="ERNAM" nillable="false" type="string">
 							</element>
-							<element maxOccurs="1" minOccurs="1" name="SEQ" nillable="false">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="6" />
-									</restriction>
-								</simpleType>
+							<element maxOccurs="1" minOccurs="1" name="SEQ" nillable="false" type="string">
 							</element>
-							<element name="SEASON" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="2"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="SEASON" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="MATNR" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="18"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="MATNR" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="COLOR" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="10"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="COLOR" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="SIZ" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="10"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="SIZ" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="SALE_FG" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="1"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="SALE_FG" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
 							<element name="SALE_GUBUN"
-								nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="1"></maxLength>
-									</restriction>
-								</simpleType>
+								nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
 							<element name="UPRICE" nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
@@ -95,55 +39,25 @@
 							<element name="SELLPRICE" nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
 							<element name="KWMENG" nillable="true"
-								minOccurs="0" maxOccurs="1">
+								minOccurs="0" maxOccurs="1" type="int">
 
-								<simpleType>
-									<restriction base="integer">
-										<maxExclusive value="8"></maxExclusive>
-									</restriction>
-								</simpleType>
 							</element>
 							<element name="SALE_TOT" nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
 							<element name="SALE_AMT" nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
-							<element name="CUST_ID" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="10"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="CUST_ID" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="POS_NO" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="2"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="POS_NO" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="BILL_NO" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="4"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="BILL_NO" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="ONLINE_YN" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="1"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="ONLINE_YN" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
 							<element name="EMP_DC_AMT"
 								nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
-							<element name="ZZPRCODE" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="10"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="ZZPRCODE" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
 							<element name="SALE_TOT_H"
 								nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
@@ -153,62 +67,27 @@
 							<element name="HEAD_ACT" nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
 							<element name="HEAD_CNT" nillable="true"
-								minOccurs="0" maxOccurs="1">
+								minOccurs="0" maxOccurs="1" type="string">
 
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="4"></maxLength>
-									</restriction>
-								</simpleType>
 							</element>
-							<element name="ALIPAY_YN" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="1"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="ALIPAY_YN" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
 							<element name="REFUND_VAT"
 								nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>
-							<element name="REFUND_YN" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="1"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="REFUND_YN" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
 							<element name="REFUND_AMT"
 								nillable="true" minOccurs="0" maxOccurs="1" type="decimal">
 							</element>							<element name="IUD" nillable="false"
-								minOccurs="0" maxOccurs="1">
+								minOccurs="0" maxOccurs="1" type="string">
 
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="1"></maxLength>
-									</restriction>
-								</simpleType>
 							</element>
-							<element name="ITF_TYPE" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="1"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="ITF_TYPE" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="VBELN" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="10"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="VBELN" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
-							<element name="BSTNK_VF" nillable="true" minOccurs="0" maxOccurs="1">
-								<simpleType>
-									<restriction base="string">
-										<maxLength value="35"></maxLength>
-									</restriction>
-								</simpleType>
+							<element name="BSTNK_VF" nillable="true" minOccurs="0" maxOccurs="1" type="string">
 							</element>
 
 						</sequence>
