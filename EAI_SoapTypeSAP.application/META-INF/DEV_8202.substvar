@@ -300,15 +300,6 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//EAI_SoapTypeSAP//newProperty1</name>
-			<value></value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
 			<name>//EAI_SoapTypeSAP///EAI_INFO/JMS/PASSWORD</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>

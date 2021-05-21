@@ -201,21 +201,23 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///CRM_INFO/password</name>
-			<value>#!gbMXGV9lnkJd1Lp65IKw+qQMkG5v2+kP7XKSbRtx5B+hFIbo9Dgjk3QsEyhxVFP/CsvzVf+TG36D6LxQLiwl9vzCZy25X+Zbss+LKfj+fxWMD4yMUILCnSY19MdZOAaz0NJA1nMwjefND1J9Wk9+/cCa7irrJSvmYCzgxG498gyBUa48xB1uecUbYdl73qtt</value>
+			<value>#!+NyUSSOCeoGaSeiTO84+vq3uDVgT+qVdVmtJtL1YfqAZNvpe7CZO4BT9Kdy3U177gK2iUkgca1Crq1n6evwV0O89/vmji1PUHXiXmNyg/hDGcVCHfa3S2+3svQuGhVWMZrezAeeU0qJWMTCbwZ+/ivJ7rqAmLrNVSZwq8yOHk0dwfxUlb6m5YkL+X+Gt8pYs</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>#!+NyUSSOCeoGaSeiTO84+vq3uDVgT+qVdVmtJtL1YfqAZNvpe7CZO4BT9Kdy3U177gK2iUkgca1Crq1n6evwV0O89/vmji1PUHXiXmNyg/hDGcVCHfa3S2+3svQuGhVWMZrezAeeU0qJWMTCbwZ+/ivJ7rqAmLrNVSZwq8yOHk0dwfxUlb6m5YkL+X+Gt8pYs</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///CRM_INFO/username</name>
-			<value>ufqdcoka2fsavc</value>
+			<value>udrga5qlr3toa7</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>udrga5qlr3toa7</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///CRM_INFO/maxconnection</name>
@@ -228,30 +230,33 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///CRM_INFO/url</name>
-			<value>jdbc:postgresql://ec2-52-205-14-231.compute-1.amazonaws.com:5432/d7uiviv9bu64n6?sslmode=require</value>
+			<value>jdbc:postgresql://ec2-18-176-104-176.ap-northeast-1.compute.amazonaws.com:5432/d5vbsb633lee2q?sslmode=require</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>jdbc:postgresql://ec2-18-176-104-176.ap-northeast-1.compute.amazonaws.com:5432/d5vbsb633lee2q?sslmode=require</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///COMMON/LOG_LEVEL</name>
-			<value>INFO</value>
+			<value>ERROR</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>ERROR</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///COMMON/ENV</name>
-			<value>DEV</value>
+			<value>PRD</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>PRD</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///DB_INFO/MAX_ROW_LONG</name>
@@ -291,21 +296,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///EAI_INFO/JMS/URL</name>
-			<value>tcp://ip-10-200-0-238.ap-northeast-2.compute.internal:8103,tcp://ip-10-200-1-187.ap-northeast-2.compute.internal:8103</value>
+			<value>tcp://ip-10-200-0-22.ap-northeast-2.compute.internal:8103,tcp://ip-10-200-1-58.ap-northeast-2.compute.internal:8103</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//EAI_SoapTypeSAP//newProperty1</name>
-			<value></value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
+			<lookupValue>tcp://ip-10-200-0-22.ap-northeast-2.compute.internal:8103,tcp://ip-10-200-1-58.ap-northeast-2.compute.internal:8103</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_SoapTypeSAP///EAI_INFO/JMS/PASSWORD</name>

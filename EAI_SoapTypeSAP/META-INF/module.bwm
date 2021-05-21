@@ -29,7 +29,6 @@
   <sca:property xmi:id="_U6b4sLePEeuwy9ua3obqNw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_U6p7ILePEeuwy9ua3obqNw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_U639kLePEeuwy9ua3obqNw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
-  <sca:property xmi:id="_Fab58LkNEeuEDd4UQo8NRQ" name="newProperty1" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_pg-AELkJEeuEDd4UQo8NRQ" name="/CRM_INFO/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_s5QxkLkJEeuEDd4UQo8NRQ" name="/CRM_INFO/password" type="property:password" scaext:simpleValue="#!9G5kweVD2UavkwFVyP94gw==" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_t-waALkJEeuEDd4UQo8NRQ" name="/CRM_INFO/url" type="XMLSchema:string" publicAccess="true" scalable="true"/>
