@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <packaging:packageUnit xmlns:packaging="http://schemas.tibco.com/tra/model/core/PackagingModel" xmlns:property="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <packaging:description>SOAPType Interface</packaging:description>
+  <packaging:description>최초반영(SOAP)</packaging:description>
   <packaging:properties>
     <packaging:property>
       <packaging:name>//EAI_SoapTypeSAP//BW.DEPLOYMENTUNIT.TYPE</packaging:name>
