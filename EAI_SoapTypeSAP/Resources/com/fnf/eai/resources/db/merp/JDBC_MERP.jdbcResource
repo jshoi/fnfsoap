@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_N06vYcT0Eeutn74kTmuvKg" name="com.fnf.eai.resources.db.merp.JDBC_MERP" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_N1ySEMT0Eeutn74kTmuvKg" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_N1ySEcT0Eeutn74kTmuvKg">
+    <substitutionBindings xmi:id="_BjzGkMT1Eeutn74kTmuvKg" template="maxConnections" propName="/MERP_INFO/maxconnection"/>
+    <substitutionBindings xmi:id="_C5ZAgMT1Eeutn74kTmuvKg" template="username" propName="/MERP_INFO/username"/>
+    <substitutionBindings xmi:id="_DIsAwMT1Eeutn74kTmuvKg" template="password" propName="/MERP_INFO/password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_N1ySEsT0Eeutn74kTmuvKg" jdbcDriver="oracle.jdbc.OracleDriver" dbURL="jdbc:oracle:thin:@&lt;machine_name>:&lt;port>:&lt;instance_name>">
+      <substitutionBindings xmi:id="_F4i5QMT1Eeutn74kTmuvKg" template="dbURL" propName="/MERP_INFO/url"/>
+    </connectionConfig>
+    <connectionProperties xmi:id="_KQa4cMT1Eeutn74kTmuvKg" key="jarFile" value="ojdbc"/>
+  </jndi:configuration>
+</jndi:namedResource>

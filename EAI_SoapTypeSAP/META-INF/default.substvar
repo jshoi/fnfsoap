@@ -199,5 +199,41 @@
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
+		<globalVariable>
+			<name>/MERP_INFO/username</name>
+			<value>eai</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/MERP_INFO/password</name>
+			<value>#!A95mPW3MxKKWmMn4J5Da4IzRsmYHx1wRt7Pzk5+nHCU=</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Password</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/MERP_INFO/url</name>
+			<value>jdbc:oracle:thin:@10.150.101.2:1521:fnfdb_pdb1.devprisub01.fnfvcn.oraclevcn.com</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/MERP_INFO/maxconnection</name>
+			<value>40</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
 	</globalVariables>
 </repository>

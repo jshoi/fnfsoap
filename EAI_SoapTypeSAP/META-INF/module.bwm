@@ -42,6 +42,10 @@
   <sca:property xmi:id="_C0hnoLkNEeuEDd4UQo8NRQ" name="/EAI_INFO/JMS/URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_Fo5MsLkNEeuEDd4UQo8NRQ" name="/EAI_INFO/JMS/USERNAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_HFd4YLkNEeuEDd4UQo8NRQ" name="/EAI_INFO/JMS/PASSWORD" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fzCh0MT0Eeutn74kTmuvKg" name="/MERP_INFO/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jF718MT0Eeutn74kTmuvKg" name="/MERP_INFO/password" type="property:password" scaext:simpleValue="#!oh1m3Gg2E24Wm5+Y0yki2Q==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jPZT8MT0Eeutn74kTmuvKg" name="/MERP_INFO/url" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jeEpIMT0Eeutn74kTmuvKg" name="/MERP_INFO/maxconnection" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_ys5hQLeiEeuEDd4UQo8NRQ" name="ComponentSAP_HERO_ONL_0001" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ys5hQbeiEeuEDd4UQo8NRQ" processName="com.fnf.eai.sap.hero.soap.SAP_HERO_ONL_0001"/>
     <sca:service xmi:id="_dZHlILejEeuEDd4UQo8NRQ" name="SAP_HERO_ONL_0001">
