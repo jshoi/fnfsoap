@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: EAI_SoapTypeSAP Application
 Bundle-SymbolicName: EAI_SoapTypeSAP.application
-Bundle-Version: 1.1.0.qualifier
+Bundle-Version: 1.2.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 6.7.0 V34 2020-11-06
 TIBCO-BW-Edition: bwe
